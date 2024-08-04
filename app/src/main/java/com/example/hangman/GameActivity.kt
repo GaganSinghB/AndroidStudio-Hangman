@@ -48,6 +48,12 @@ class GameActivity : AppCompatActivity() {
         val playAgain: Button = findViewById(R.id.playAgainButton)
         val quit: Button = findViewById(R.id.quitButton)
 
+        val keyboard: TableLayout = findViewById(R.id.keyboard)
+        val afterWin: ConstraintLayout = findViewById(R.id.afterWin)
+
+        keyboard.visibility = View.VISIBLE
+        afterWin.visibility = View.GONE
+
         val intent = intent
         val p1 = intent.getStringExtra("P1")
         val p2 = intent.getStringExtra("P2")
